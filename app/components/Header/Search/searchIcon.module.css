@@ -1,0 +1,27 @@
+.searchIcon {
+    margin-left: 2rem;
+}
+
+.searchBar {
+    position: absolute;
+    top: 0;
+    background-color: aqua;
+}
+
+.searchIcon button {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    .searchIcon {
+        margin-left: 0;
+    }
+
+    .searchIcon img {
+        width: 20px;
+        height: 20px;
+    }
+}
+

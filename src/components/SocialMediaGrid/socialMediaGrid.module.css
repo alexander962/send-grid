@@ -1,0 +1,48 @@
+.SocialMediaGrid {
+  margin: 2.5rem 0;
+  padding: 0 1rem;
+}
+.title {
+  font-family: 'Industry';
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #172532;
+  text-align: center;
+}
+
+.icons {
+  width: fit-content;
+  margin: 1rem auto;
+}
+
+.imageGrid {
+  display: flex;
+  flex-flow: row wrap;
+  padding-top: 1rem;
+}
+
+.image img {
+  object-fit: cover;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .image {
+    width: 50%;
+  }
+
+  .image:nth-child(n + 5) {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .SocialMediaGrid {
+    margin: 5rem 0;
+  }
+  .image {
+    width: 25%;
+  }
+}

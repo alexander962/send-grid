@@ -1,0 +1,182 @@
+@media only screen and (max-width: 768px) {
+  .imageTextWithOutBg .imageRight {
+    display: flex;
+    flex-flow: column-reverse;
+  }
+
+  .textSide {
+    padding: 2rem 1rem;
+  }
+}
+
+.title {
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.heading {
+  font-size: 1rem;
+}
+
+.imageTextWithBg {
+  background-color: #dbd5cd;
+}
+
+.imageTextWithOutBg {
+  margin: 2.5rem auto;
+  max-width: 1800px;
+}
+
+.imageTextWithBg .imageTextContainer {
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.imageTextContainer {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.imageSide {
+  position: relative;
+}
+
+.imageSide img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.textInner {
+  max-width: 600px;
+}
+
+.title {
+  font-family: 'Industry';
+  font-weight: 600;
+  color: #172532;
+}
+
+.richText p,
+.richText li,
+.richText a {
+  font-size: 0.875rem;
+}
+
+.richText blockquote {
+  margin: 2rem 0;
+  position: relative;
+}
+
+.richText blockquote:before {
+  content: '';
+  background-image: url('quote.png');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: -1rem;
+}
+
+.richText blockquote p {
+  position: relative;
+  font-size: 0.875rem;
+}
+
+.tab {
+  padding: 1rem 0;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.accordionTitle {
+  position: relative;
+  font-size: 1.125rem;
+  font-family: 'Industry';
+  font-weight: 600;
+  color: #172532;
+  cursor: pointer;
+}
+
+.accordionDesc {
+  padding-top: 1rem;
+  margin: 0;
+}
+
+.accordion summary::marker {
+  content: '';
+}
+
+.accordionTitle:after {
+  content: url('/plus.svg');
+  position: absolute;
+  right: 0;
+  width: 22px;
+  height: 22px;
+}
+
+details[open] .accordionTitle:after {
+  content: url('/minus.svg');
+}
+
+.buttonWrapper {
+  margin-top: 2rem;
+}
+
+@media only screen and (min-width: 769px) {
+  .imageTextWithBg .imageSide {
+    width: calc(60% - 3.6vw);
+  }
+
+  .imageTextWithBg .textSide {
+    width: calc(40% - 3.6vw);
+  }
+
+  .imageTextWithOutBg {
+    margin: 5rem auto;
+  }
+
+  .imageText {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 3rem;
+  }
+  .imageTextWithOutBg .imageSide,
+  .imageTextWithOutBg .textSide {
+    width: calc(50% - 3.6vw);
+  }
+
+  .textSide {
+    padding: 2rem 1rem;
+  }
+
+  .imageRight {
+    justify-content: right;
+  }
+
+  .imageLeft {
+    justify-content: left;
+  }
+
+  .heading {
+    font-size: 1.125rem;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .title {
+    font-size: 2.25rem;
+  }
+
+  .richText p,
+  .richText li,
+  .richText a,
+  .richText blockquote p {
+    font-size: 0.875rem;
+    font-size: 1.125rem;
+  }
+}

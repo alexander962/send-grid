@@ -1,0 +1,69 @@
+.heroSlider .swiper-button-next,
+.heroSlider .swiper-button-prev {
+  border: 2px solid #fff;
+  position: absolute;
+  margin-bottom: 4rem;
+  top: auto;
+  bottom: 0;
+  width: 45px;
+  height: 45px;
+  border-radius: 0;
+}
+
+.heroSlider .swiper-button-next:after,
+.heroSlider .swiper-button-prev:after {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.heroSlider .swiper-button-prev {
+  left: auto;
+  right: 5%;
+  margin-right: 50px;
+}
+
+.heroSlider .swiper-button-next {
+  right: 5%;
+  left: auto;
+}
+
+.heroSlider .swiper-slide {
+  opacity: 0;
+  transition: opacity 0.8s ease-in;
+}
+
+.heroSlider.swiper {
+  z-index: 0;
+}
+
+.heroSlider .swiper-slide-active {
+  opacity: 1;
+}
+
+@media only screen and (min-width: 769px) {
+  .heroSlider .swiper-button-next,
+  .heroSlider .swiper-button-prev {
+    margin-bottom: 8rem;
+  }
+  .heroSlider .swiper-button-prev {
+    left: 45%;
+    margin-left: -30px;
+    right: auto;
+  }
+
+  .heroSlider .swiper-button-next {
+    left: 47%;
+    margin-left: -4px;
+    right: auto;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .heroSlider .swiper-button-prev {
+    left: 40%;
+  }
+
+  .heroSlider .swiper-button-next {
+    left: 42%;
+  }
+}

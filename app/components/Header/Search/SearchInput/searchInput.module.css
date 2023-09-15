@@ -1,0 +1,38 @@
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: 45.812rem;
+  margin: 10rem auto 0;
+}
+
+.input {
+  width: 100%;
+  padding-bottom: 1rem;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  background: transparent;
+  font: 500 18px/22px 'Industry';
+  color: #DBD5CD;
+}
+
+.searchButton {
+  position: absolute;
+  right: 0;
+  bottom: .6rem;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin-top: 5.063rem;
+  }
+
+  .searchButton {
+    display: none;
+  }
+}

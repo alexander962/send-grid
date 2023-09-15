@@ -1,0 +1,135 @@
+.testimonials {
+  margin: 2.5rem 0;
+  padding: 0 1rem;
+  display: flex;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  flex-flow: column;
+}
+
+.testimonial {
+  width: 100%;
+  border: 1px solid #efeaea;
+  display: flex;
+  flex-flow: column;
+}
+
+@media only screen and (min-width: 769px) {
+  .testimonials {
+    margin: 5rem 0;
+    flex-flow: row;
+  }
+
+  .testimonial {
+    width: calc(50% - 2rem);
+  }
+}
+
+.testimonialList {
+  display: flex;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  flex-flow: wrap;
+}
+
+.imageSide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.textSide {
+  height: 100%;
+  background: rgba(217, 217, 217, 0.1);
+  padding: 2rem;
+  position: relative;
+}
+
+.textInner {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.writersInfo {
+  margin-top: auto;
+}
+
+.textSide:before {
+  content: '';
+  background-image: url('quote.png');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -1rem;
+}
+
+.heading {
+  position: relative;
+  width: fit-content;
+  font-family: 'Industry';
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.heading:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #ad9836;
+}
+
+.writersName {
+  font-family: 'ClearSansBold';
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.writersDesc {
+  margin: 0;
+  font-family: 'ClearSansReg';
+  font-size: 0.875rem;
+}
+
+.titleSide {
+  position: relative;
+  padding: 0 2px;
+  min-width: 20%;
+}
+
+.button {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 769px) {
+  .heading {
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .titleSide:before {
+    content: '';
+    background-image: url('quote.png');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 120px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

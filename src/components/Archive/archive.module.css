@@ -1,0 +1,172 @@
+.archiveTitle {
+  padding: 0 1rem;
+  font-size: 2.25rem;
+  margin: 2.5rem 0;
+  font-weight: 600;
+}
+
+.cards {
+  display: flex;
+  flex-flow: row wrap;
+  row-gap: 1rem;
+  column-gap: 2rem;
+  margin: 2.5rem 0;
+  padding: 0 1rem;
+}
+
+.card {
+  width: 100%;
+  display: block;
+  padding: 0 0 1.5rem;
+}
+
+.principalCard {
+  display: flex;
+  gap: 1rem;
+}
+
+.principalCard .imageWrapper {
+  width: 15%;
+}
+
+.principalCard .imageWrapper img {
+  height: auto;
+}
+
+.principalCard .textInner {
+  padding: 0;
+  width: 85%;
+  max-width: 900px;
+}
+
+.principalName {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: left;
+  color: #172532;
+}
+
+.principalTitle {
+  font-size: 1rem;
+  margin: 0 0 0.2rem 0;
+}
+
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+
+.textInner {
+  padding: 0.5rem;
+}
+
+.publishDate {
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.projectTitle {
+  margin: 0;
+  font-size: 0.938rem;
+  font-weight: normal;
+  text-align: center;
+  color: #172532;
+}
+
+.articleTitle {
+  margin: 0.5rem 0 0 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-align: left;
+  color: #172532;
+}
+
+.excerpt {
+  margin: 0.5rem 0 0 0;
+  font-size: 0.9rem;
+}
+
+.imageWrapper img {
+  display: block;
+  object-fit: cover;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.projectType {
+  width: fit-content;
+}
+
+.projectTypeTitle {
+  color: #818181;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.projectTypeTitle:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  list-style-type: none;
+  width: 100%;
+}
+
+.pagination li {
+  margin-right: 10px;
+  font: 500 18px/22px 'Industry';
+}
+
+.pagination li button {
+  cursor: pointer;
+  font: 500 18px/22px 'Industry';
+  border: none;
+  background: transparent;
+}
+
+li.paginationActive button {
+  cursor: default;
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 769px) {
+  .cards {
+    margin: 1rem 0 2.5rem;
+  }
+
+  .imageWrapper .articleImage {
+    height: 140px;
+  }
+
+  .imageWrapper .projectImage {
+    height: 180px;
+  }
+
+  .card {
+    padding: 0;
+    width: calc(33.3333% - 1.5rem);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .principalCard {
+    gap: 3rem;
+  }
+  .imageWrapper .articleImage {
+    height: 160px;
+  }
+
+  .imageWrapper .projectImage {
+    height: 200px;
+  }
+
+  .card {
+    padding: 0;
+    width: calc(25% - 1.5rem);
+  }
+}

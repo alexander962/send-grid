@@ -1,0 +1,100 @@
+.article {
+  margin: 1rem 0 5rem;
+}
+
+.date {
+  margin: 0;
+}
+
+.socialMediaIcons {
+  width: fit-content;
+  margin: 0 0 0.5rem auto;
+}
+
+.socialMediaIcons svg {
+  height: 29px;
+}
+
+.sidebarContent {
+  display: none;
+}
+
+.articleWrapper {
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.imageContainer, .articleInfo {
+  padding: 0 1rem;
+}
+
+.title {
+  font-family: 'Industry';
+  font-weight: 600;
+  font-size: 1.813rem;
+}
+
+.imageContainer {
+  position: relative;
+}
+
+.image {
+  max-width: 750px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  position: relative !important;
+  object-fit: cover;
+}
+
+.content h1 {
+  font-size: 2.25rem;
+  margin: 2rem 0;
+}
+
+.content h2 {
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+.content h3 {
+  font-size: 1.813rem;
+  font-weight: 400;
+  margin: 2rem 0;
+}
+
+.content h4 {
+  font-size: 1.25rem;
+  margin: 2rem 0;
+}
+
+.content h5 {
+  font-size: 1.2rem;
+  margin: 2rem 0;
+}
+
+.content h6 {
+  font-size: 1rem;
+  margin: 2rem 0;
+}
+
+@media only screen and (min-width: 992px) {
+
+  .title {
+    font-size: 2.25rem;
+  }
+  
+  .article {
+    display: flex;
+    flex-flow: row;
+    gap: 5rem;
+  }
+
+  .sidebarContent {
+    width: 35%;
+    display: block;
+    margin-top: 4rem;
+    padding-right: 1rem;
+  }
+}

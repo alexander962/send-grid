@@ -1,0 +1,157 @@
+.noBackground {
+  margin: 5rem 0;
+}
+
+.title {
+  font-family: 'Industry';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
+  color: #ad9836;
+}
+
+.stats {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat__value {
+  font-family: 'industry';
+  font-weight: 700;
+  line-height: 1;
+  color: #172532;
+}
+
+.stat__label {
+  margin: 0;
+  font-family: 'ClearSansReg';
+}
+
+.description {
+  text-align: center;
+  font-size: 1.125rem;
+  max-width: 650px;
+  margin: 0 auto 3rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .stat__label {
+    font-size: 1.125rem;
+  }
+
+  .stat {
+    width: 100%;
+    position: relative;
+    padding: 1rem;
+  }
+
+  .stat:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height: 1px;
+    width: 264px;
+    background-color: #cbd1d2;
+  }
+
+  .stat:last-child:after {
+    display: none;
+  }
+
+  .stat__value {
+    font-size: 4rem;
+  }
+}
+
+.statsSection {
+  position: relative;
+  margin: 2.5rem 0;
+}
+
+@media only screen and (min-width: 769px) {
+  .statsSection {
+    margin: 2.5rem 0;
+  }
+  .stat__label {
+    font-size: 1.25rem;
+  }
+  .stat {
+    margin: 1rem 0;
+    border-right: 1px solid;
+    width: 50%;
+    padding: 0 1rem;
+  }
+  .stat__value {
+    font-size: 4.5rem;
+  }
+  .stat:last-child {
+    border-right: 0;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .stat {
+    width: 25%;
+  }
+  .background {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 84%, 40% 94%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 84%, 40% 94%, 0 100%);
+  }
+}
+
+/* background */
+
+@media only screen and (max-width: 1099px) {
+  .background {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 40% 96%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 40% 96%, 0 100%);
+  }
+}
+
+.background {
+  background-color: #172532;
+  padding: 5rem 0 10rem;
+}
+
+.background .stat__value {
+  color: #ffffff;
+}
+
+.background .stat__label {
+  color: #ffffff;
+}
+
+.background .description {
+  color: #ffffff;
+}
+
+.background .stat {
+  border-color: #ffffff;
+}
+
+/* no background */
+
+.noBackground .stat__value {
+  color: #172532;
+}
+
+.noBackground .stat__label {
+  color: #333333;
+}
+
+.noBackground .description {
+  color: #172532;
+}
+
+.noBackground .stat {
+  border-color: #cbd1d2;
+}

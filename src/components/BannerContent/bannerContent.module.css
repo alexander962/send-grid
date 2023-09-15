@@ -1,0 +1,74 @@
+@media only screen and (max-width: 768px) {
+  .titleWithIcon,
+  .titleWithOutIcon {
+    font-size: 1.75rem;
+  }
+  .description p,
+  .description li,
+  .description a {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .bannerCta {
+    margin: 5rem 0 0;
+  }
+  .titleWithIcon {
+    font-size: 2.25rem;
+  }
+  .titleWithOutIcon {
+    font-size: 3rem;
+  }
+  .description p,
+  .description li,
+  .description a {
+    font-size: 1.5rem;
+  }
+}
+
+.bannerCta {
+  position: relative;
+  background-color: #172532;
+  padding: 8rem 1rem;
+  margin: 2.5rem 0 0;
+}
+
+.bannerCta .content {
+  max-width: 430px;
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.titleWithIcon {
+  color: #ffffff;
+}
+
+.titleWithOutIcon {
+  color: #ffffff;
+}
+
+.description p,
+.description li,
+.description a {
+  color: #ffffff;
+  font-family: 'roboto', sans-serif;
+  font-weight: 400;
+}
+
+.bannerCta img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.icon {
+  display: block;
+  margin: 0 auto 1rem;
+  position: relative;
+}
+
+.btnWrapper {
+  margin-top: 2rem;
+}

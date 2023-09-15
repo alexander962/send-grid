@@ -1,0 +1,75 @@
+.container {
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1rem 0;
+}
+
+.form {
+  width: 100%;
+  max-width: 500px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.formGroup label {
+  font-family: 'Industry';
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #172532;
+  margin-bottom: 4px;
+}
+
+.formGroup input {
+  outline: none;
+  border: 2px solid rgb(151, 150, 150);
+  border-radius: 5px;
+  padding: 8px 10px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #172532;
+}
+
+.formGroup textarea {
+  outline: none;
+  width: 100%;
+  height: 150px;
+  border-radius: 5px;
+  resize: none;
+  border: 2px solid rgb(151, 150, 150);
+  padding: 10px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.formGroupBtn {
+  display: inline-block;
+  font-family: 'Industry';
+  font-weight: 600;
+  font-size: 1rem;
+  color: #172532;
+  background: #ad9836;
+  border: 3px solid #ad9836;
+  padding: 0.6rem 2rem;
+  transition: all .3s ease;
+  cursor: pointer;
+}
+
+.formGroupBtn:hover {
+  background-color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+

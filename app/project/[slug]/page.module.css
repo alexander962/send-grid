@@ -1,0 +1,113 @@
+.article {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 1rem 0 2rem;
+}
+
+.socialMediaIcons {
+  width: fit-content;
+  padding: 0 1rem;
+  margin: 0 0 1rem;
+}
+
+.socialMediaIcons svg {
+  height: 25px;
+}
+
+.title {
+  font-family: 'Industry';
+  font-weight: 600;
+  font-size: 1.813rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  padding: 0 1rem;
+}
+
+.imageContainer {
+  padding: 0 1rem;
+  position: relative;
+}
+
+.image {
+  max-width: 750px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  position: relative !important;
+  object-fit: cover;
+}
+.content {
+  margin-top: 1.5rem;
+  margin-bottom: 02.5rem;
+}
+
+.content h1 {
+  font-size: 2.25rem;
+  margin: 2rem 0;
+}
+
+.content h2 {
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+.content h3 {
+  font-size: 1.813rem;
+  font-weight: 400;
+  margin: 2rem 0;
+}
+
+.content h4 {
+  font-size: 1.25rem;
+  margin: 2rem 0;
+}
+
+.content h5 {
+  font-size: 1.2rem;
+  margin: 2rem 0;
+}
+
+.content h6 {
+  font-size: 1rem;
+  margin: 2rem 0;
+}
+
+.projectCat {
+  padding: 1rem 1rem;
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+}
+
+.projectCat li {
+  background-color: #DBD5CD;
+  padding: .4rem .6rem;
+}
+
+.projectCat li:hover {
+  opacity: 70%;
+}
+
+.projectTypeLink {
+  font-size: .9rem;
+}
+
+@media only screen and (min-width: 769px) {
+  .title {
+    font-size: 2.25rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .article {
+    display: flex;
+    flex-flow: row;
+    gap: 5rem;
+  }
+  .articleWrapper {
+    max-width: 720px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,28 @@
+.link {
+  display: inline-block;
+  font-family: 'Industry';
+  font-weight: 600;
+  font-size: 1rem;
+  color: #172532;
+  background: #ad9836;
+  border: 3px solid #ad9836;
+  padding: 0.6rem 2rem;
+}
+
+.link:hover,
+.link:focus,
+.link:active {
+  background-color: #ffffff;
+}
+
+@media only screen and (max-width: 768px) {
+  .link {
+    font-size: 0.875rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .link {
+    font-size: 1rem;
+  }
+}

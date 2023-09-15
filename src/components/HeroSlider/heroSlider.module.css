@@ -1,0 +1,85 @@
+.hero {
+  width: 100%;
+  position: relative;
+  height: 80vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-family: 'Industry';
+}
+
+.title {
+  font-size: 2.125rem;
+  color: #fff;
+}
+
+.description {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  max-width: 70%;
+  width: 100%;
+  margin-bottom: 1.625rem;
+  color: #fff;
+}
+
+.heroImage {
+  object-fit: cover;
+  object-position: center center;
+}
+
+.ctaContainer {
+  position: relative;
+  max-width: 1200px;
+  padding-bottom: 4rem;
+  width: 100%;
+}
+.cta {
+  padding: 0 1rem;
+}
+
+.gradient {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 25%, rgba(0, 0, 0, 0) 100%);
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+}
+
+.btnWrapper {
+  max-width: 50%;
+}
+
+@media only screen and (min-width: 769px) {
+  .title {
+    font-size: 3rem;
+  }
+  .description {
+    font-size: 1.2rem;
+    max-width: 60%;
+  }
+  .addNegativeMargin {
+    margin-bottom: -7rem;
+    z-index: 0;
+  }
+  .herosliderWrapper {
+    z-index: 0;
+  }
+  .addNegativeMargin .ctaContainer {
+    padding-bottom: 8rem;
+  }
+  .btnWrapper {
+    max-width: 30%;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .title {
+    font-size: 3.75rem;
+  }
+  .description {
+    max-width: 40%;
+    font-size: 1.5rem;
+  }
+}

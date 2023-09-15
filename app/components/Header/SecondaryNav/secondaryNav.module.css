@@ -1,0 +1,41 @@
+.secondaryNav {
+  background: #DBD5CD;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navList {
+  display: flex;
+  padding: .45rem 0 .45rem;
+}
+
+.navList li {
+  list-style-type: none;
+}
+
+.navList a {
+  padding: .5rem .7rem .3rem;
+  font-size: 0.938rem;
+  font-weight: 600;
+  color: #172532;
+}
+
+.navList a:hover {
+  text-decoration: underline;
+}
+
+.navList li:last-child a {
+  padding-right: 1rem;
+}
+
+.activeMenuItem {
+  text-decoration: underline;
+  cursor: default;
+}
+
+@media screen and (max-width: 1024px) {
+  .secondaryNav {
+    display: none;
+  }
+}

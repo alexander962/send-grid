@@ -1,0 +1,55 @@
+.menuMain {
+  margin-top: 1.5rem;
+}
+
+.menuMainLinks {
+  padding: 0;
+  list-style-type: none;
+}
+
+.menuMainLinksClose {
+  position: absolute;
+  width: 100%;
+  top: 5.6rem;
+  left: 0;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  background-color: #172532;
+}
+
+.menuMainLinksShow {
+  transform: translateX(0);
+}
+
+.menuMainLinks li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  font: 600 15px/18px 'Industry';
+  color: #FFFFFF;
+  border-bottom: 1px solid #283D52;
+  padding: 1.4rem 1rem;
+}
+
+.menuMainLinks.menuMainLinksClose li {
+  display: block;
+}
+
+.menuMainLinks.menuMainLinksClose li a {
+  margin-left: 2rem;
+}
+
+.menuMainLinks.menuMainLinksClose li:first-child a {
+  margin-left: 1.5rem;
+}
+
+.menuMainArrow {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.menuMainArrowLeft {
+  transform: rotate(180deg)
+}

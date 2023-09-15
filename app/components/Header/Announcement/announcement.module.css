@@ -1,0 +1,38 @@
+.banner {
+  height: auto;
+  min-height: 2.25rem;
+  background: #172532;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.announcement {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.announcement p {
+  margin: 0 1rem;
+  font-size: 0.915rem;
+  color: #fff;
+}
+
+.announcementText {
+  padding: 0.3rem;
+  margin-right: 1rem;
+}
+
+.announcementText a {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 769px) {
+  .announcement p {
+    font-size: 1rem;
+  }
+}

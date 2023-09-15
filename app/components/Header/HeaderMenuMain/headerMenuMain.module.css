@@ -1,0 +1,15 @@
+.main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.188rem 1rem 1.7rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .main {
+    flex-direction: row-reverse;
+    padding: 1rem;
+  }
+}

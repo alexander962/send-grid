@@ -1,0 +1,153 @@
+
+@media only screen and (max-width: 768px) {
+  .testimonials.addNegativeMargin {
+    position: relative;
+    margin-top: -6rem;
+  }
+}
+
+.testimonials {
+  max-width: 1800px;
+  margin: 2.5rem auto;
+  padding: 0 1rem;
+}
+
+.testimonialList {
+  display: flex;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  flex-flow: column-reverse;
+}
+
+.imageSide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.writersInfo {
+  margin-top: auto;
+}
+
+.heading {
+  position: relative;
+  width: fit-content;
+  font-family: 'Industry';
+  font-weight: 500;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+}
+
+.testimonial {
+  padding-bottom: 2rem;
+}
+
+.heading:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #ad9836;
+}
+
+.writersName {
+  font-family: 'ClearSansBold';
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.writersDesc {
+  margin: 0;
+  font-family: 'ClearSansReg';
+  font-size: 0.875rem;
+}
+
+.headingWrapperMobile .heading {
+  margin: 0 auto 2.5rem;
+}
+
+.headingWrapperMobile:before {
+  content: '';
+  display: block;
+  background-image: url('quote.png');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.headingWrapperDesktop {
+  display: none;
+}
+
+@media only screen and (min-width: 769px) {
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .headingWrapperMobile {
+    display: none;
+  }
+
+  .headingWrapperDesktop {
+    position: relative;
+    height: 100px;
+    display: flex;
+    align-items: center;
+  }
+
+  .headingWrapperDesktop .heading {
+    margin-left: 2rem;
+  }
+
+  .headingWrapperDesktop:before {
+    content: '';
+    display: block;
+    background-image: url('quote.png');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+  }
+
+  .testimonials {
+    margin: 5rem auto;
+    padding: 0;
+  }
+
+  .testimonialList {
+    justify-content: space-between;
+    flex-flow: row;
+    align-items: center;
+  }
+
+  .textSide {
+    padding-left: 2rem;
+  }
+
+  .textSide,
+  .imageSide {
+    width: calc(50% - 2rem);
+  }
+
+}
+
+@media only screen and (min-width: 1100px) {
+  .textSide {
+    padding-left: 5rem;
+  }
+
+  .headingWrapperDesktop .heading {
+    margin-left: 5rem;
+    max-width: 200px;
+  }
+
+}

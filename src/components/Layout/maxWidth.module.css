@@ -1,0 +1,13 @@
+.maxWidth {
+  max-width: 1200px;
+  padding: 0 0.25rem;
+  position: relative;
+  margin: auto;
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .maxWidth {
+    padding: 0;
+  }
+}

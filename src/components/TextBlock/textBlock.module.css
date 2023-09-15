@@ -1,0 +1,124 @@
+.addMaxWidth {
+  max-width: 1000px;
+}
+
+.alignedCenter {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.alignedLeft {
+  text-align: left;
+}
+
+
+.richText {
+  padding: 0 1rem;
+  margin: 3rem 0;
+}
+
+.richText p {
+  margin: 1rem 0;
+}
+
+.title {
+  font-family: 'Industry';
+  font-size: 2.25rem;
+  margin: 1rem 0;
+}
+
+.richText h2 {
+  font-family: 'Industry';
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.richText h3 {
+  font-family: 'Industry';
+  font-size: 1.813rem;
+  font-weight: 400;
+  margin: 1rem 0;
+}
+
+.richText h4 {
+  font-family: 'Industry';
+  font-size: 1.25rem;
+  margin: 1rem 0;
+}
+
+.conrichTexttent h5 {
+  font-family: 'Industry';
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.richText h6 {
+  font-family: 'Industry';
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+.richText a {
+  text-decoration: underline;
+  font-weight: 800;
+  font-family: 'ClearSansBold';
+}
+
+.richText a:hover {
+  color: #ad9836;
+}
+
+.richText hr {
+    color: #CBD1D2;
+    background-color:#CBD1D2;
+    border-color: #CBD1D2;
+    border: 1px solid;
+}
+
+.richText blockquote {
+    padding: 1.5rem 0;
+    position: relative;
+}
+
+.richText blockquote:before {
+    content: '';
+    background-image: url('quote.png');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 1rem;
+}
+
+.richText blockquote p {
+    position: relative;
+    font-size: 1.125rem;
+}
+
+.richText ul, .richText ol {
+    padding-left: 2rem;
+}
+
+@media only screen and (min-width: 769px) {
+    .richText blockquote p {
+        padding-left: 2rem;
+    }
+}
+
+.imageWrapper {
+  position: relative;
+  margin: 2rem 0;
+}
+
+.imageWrapper img {
+  display: block;
+  max-width: 720px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0 auto;
+ 
+}
+

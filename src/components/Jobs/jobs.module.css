@@ -1,0 +1,95 @@
+.jobsSection {
+    margin: 5rem 0;
+    padding: 0 1rem;
+}
+
+.title {
+    text-align: center;
+    margin-bottom:2rem;
+}
+
+.jobs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.jobCard {
+    background-color: #DBD5CD;
+    padding: 3rem 1.5rem;
+    min-height: 350px;
+    max-width: 320px;
+    display: flex;
+    flex-flow: column;
+}
+
+.jobTitle {
+    position: relative;
+    font-family: 'industry';
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #172532;
+    width: fit-content;
+    font-size: 1.375rem;
+}
+
+.jobTitle:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -5px;
+    height: 1px;
+    width: 100%;
+    background-color: #ad9836;
+  }
+
+.jobSalary {
+    margin-top: 1rem;
+    color: #172532;
+    font-size: 1.125rem;
+}
+
+.linkWrapper {
+    margin-top: auto;
+}
+
+.link {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    text-transform: uppercase;
+}
+
+.arrow {
+    background-color: #ad9836;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+  }
+  
+  .link .arrow:hover {
+    transform: scale(1.1);
+  }
+  
+  .button {
+    width: fit-content;
+    margin: 4rem auto 0;
+  }
+
+  @media only screen and (min-width: 769px) {
+    .jobCard {
+        width: calc(33.333% - 2rem);
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .jobTitle {
+        font-size: 1.5rem;
+    }
+}

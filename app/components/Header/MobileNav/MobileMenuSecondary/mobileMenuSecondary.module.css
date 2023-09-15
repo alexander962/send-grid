@@ -1,0 +1,26 @@
+.menuSecondary {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 1.625rem;
+  padding: 0 1rem;
+}
+
+.menuSecondary ul {
+  list-style-type: none;
+}
+
+.menuSecondary ul li {
+  font: 600 15px/18px 'Industry';
+  color: #FFFFFF;
+  margin-bottom: 1.5rem;
+}
+
+.menuSecondaryBtn {
+  background: #FFFFFF;
+  border: 3px solid #AD9836;
+  padding: .2rem 1rem;
+  font: 700 15px/18px 'Industry';
+  text-align: center;
+  color: #172532;
+}

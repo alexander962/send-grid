@@ -1,0 +1,9 @@
+.backTo {
+  display: block;
+  padding: 2rem 1rem 0;
+  text-decoration: underline;
+}
+
+.backTo:hover {
+  color: #ad9836;
+}

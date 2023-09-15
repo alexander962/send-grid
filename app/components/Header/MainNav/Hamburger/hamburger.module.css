@@ -1,0 +1,61 @@
+/*@media only screen and (max-width: 768px) {*/
+/*  .hamburger {*/
+/*    display: flex;*/
+/*    border: none;*/
+/*    margin-left: 1rem;*/
+/*    background: transparent;*/
+/*    transition: all 0.5s ease;*/
+/*  }*/
+
+/*  .hamburger:hover .strip div {*/
+/*    background: #172532;*/
+/*  }*/
+
+/*  .strip {*/
+/*    transition: all 0.5s ease;*/
+/*    cursor: pointer;*/
+/*  }*/
+
+  /* .hamburger.active {
+        .hamburger-strip div:first-child{
+            transform: translateY(13px) rotate(45deg);
+        }
+        .hamburger-strip div:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburger-strip div:last-child {
+            transform: translateY(-13px) rotate(-45deg);
+        }
+    } */
+
+/*  .strip div {*/
+/*    height: 3px;*/
+/*    border-radius: 2px;*/
+/*    background: #172532;*/
+/*    margin: 10px 0;*/
+/*    transition: all 0.55s cubic-bezier(0.075, 0.82, 0.165, 1);*/
+/*    width: 40px;*/
+/*  }*/
+/*}*/
+
+/*@media only screen and (min-width: 769px) {*/
+/*  .hamburger {*/
+/*    display: none;*/
+/*  }*/
+/*}*/
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger button {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}

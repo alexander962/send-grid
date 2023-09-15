@@ -1,0 +1,96 @@
+@media only screen and (max-width: 768px) {
+  .block {
+    flex-flow: column;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .item {
+    width: 100%;
+  }
+  .description {
+    font-size: 0.875rem;
+  }
+}
+
+.block {
+  margin: 2.5rem auto;
+  justify-content: stretch;
+  display: flex;
+  padding: 0 1rem;
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+
+.item {
+  position: relative;
+  -webkit-box-shadow: inset 0px 0px 0px 1px #cbd1d2;
+  -moz-box-shadow: inset 0px 0px 0px 1px #cbd1d2;
+  box-shadow: inset 0px 0px 0px 1px #cbd1d2;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-family: 'Industry';
+  font-weight: 600;
+  color: #172532;
+  margin-bottom: 0.5rem;
+}
+
+.block p {
+  max-width: 27rem;
+}
+
+.imageContainer {
+  position: relative;
+}
+
+.imageContainer img {
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+.ctaBody {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
+.button a {
+  width: fit-content;
+}
+
+.buttonWrapepr {
+  margin-top: auto;
+}
+
+@media only screen and (min-width: 769px) {
+  .block {
+    flex-flow: row wrap;
+    margin: 5rem 0;
+    justify-content: center;
+  }
+  .item {
+    display: flex;
+    flex-flow: column;
+    width: calc(50% - 1rem);
+  }
+  .description {
+    font-size: 1rem;
+  }
+  .ctaBody {
+    padding: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .title {
+    font-size: 2.25rem;
+  }
+  .block {
+    column-gap: 2rem;
+    row-gap: 2rem;
+  }
+}

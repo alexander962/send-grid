@@ -1,0 +1,44 @@
+.mainNav {
+  margin-left: auto;
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+}
+
+.navList li {
+  list-style-type: none;
+  padding: 0.2rem;
+  transition: all .3s ease;
+}
+
+.navList a {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.navList a:hover {
+  text-decoration: underline;
+}
+
+.navList li:last-child {
+  border: 3px solid #ad9836;
+  padding: 0.1rem 1rem 0.1rem;
+}
+
+.navList li:last-child:hover {
+  background-color: #ad9836;
+}
+
+.activeMenuItem {
+  text-decoration: underline;
+  cursor: default;
+}
+
+@media screen and (max-width: 1024px) {
+  .mainNav {
+    display: none;
+  }
+}

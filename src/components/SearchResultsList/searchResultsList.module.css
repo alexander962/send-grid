@@ -1,0 +1,93 @@
+.pageTitle {
+  margin: 2rem 0;
+}
+
+.noResult,
+.loading {
+  font-family: 'Industry';
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.searchResults {
+  list-style-type: none;
+  padding: 0 1rem;
+  margin: 2rem 0;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  list-style-type: none;
+}
+
+.pagination li {
+  margin-right: 10px;
+  font: 500 18px/22px 'Industry';
+}
+
+.pagination li button {
+  cursor: pointer;
+  font: 500 18px/22px 'Industry';
+  border: none;
+  background: transparent;
+}
+
+li.paginationActive button {
+  cursor: default;
+  text-decoration: underline;
+}
+
+.searchResult {
+  padding: 1rem 0;
+  border-bottom: 1px solid #dbd5cd;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-family: 'industry';
+  font-weight: 600;
+  margin: 0 0 0.3rem;
+}
+
+.date {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0 0 0.3rem;
+}
+
+.excerpt {
+  font-size: 0.938rem;
+  margin: 0;
+}
+
+.imageContainer {
+  position: relative;
+}
+
+.imageContainer .image {
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  position: relative !important;
+  object-fit: cover;
+}
+
+.searchResultInner {
+  display: flex;
+  row-gap: 1rem;
+  column-gap: 2rem;
+  flex-flow: column;
+}
+
+@media only screen and (min-width: 769px) {
+  .searchResultInner {
+    flex-flow: row;
+  }
+  .imageContainer {
+    max-width: 250px;
+    width: 100%;
+  }
+}

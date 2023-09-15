@@ -1,0 +1,75 @@
+.searchModal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 8rem;
+  background-color: #172532;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 9999;
+}
+
+.mobileMenuShow {
+  transform: translateY(0);
+}
+
+.searchModalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.searchModalBtn, .searchModalClose {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.searchModalBtn {
+  display: none;
+}
+
+.searchModalPlug {
+  background: transparent;
+}
+
+.searchModalPlug:focus {
+  border: none;
+  outline: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .searchModal {
+    padding: 8rem 1rem  0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .searchModal {
+    padding: 1rem;
+  }
+
+  .searchModalBtn {
+    display: block;
+  }
+
+  .searchModalHeader img {
+    width: 12.875rem;
+    height: 1.875rem;
+  }
+
+  .searchModalBtn img, .searchModalClose img {
+    width: 1.313rem;
+    height: 1.313rem;
+  }
+}
+
+
+
+
+
+
+
+
