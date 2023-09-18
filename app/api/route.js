@@ -7,7 +7,7 @@ export async function POST(req) {
     sgMail.setApiKey(sendGridApiKey);
 
     const msg = {
-      to: 'info@martinhorn.com',
+      to: 'sanyadeveloper2022@gmail.com',
       from: 'info@martinhorn.com',
       subject: 'New Contact Form Submission',
       text: `Name: ${name}\nCompany: ${company}\nEmail: ${email}\nPhone: ${phone}\nComments: ${comments}`,
